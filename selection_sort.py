@@ -1,5 +1,3 @@
-a = [1,3,7,2,9]
-
 def selectionSort(items):
   temp = items[::]
   for i in range(len(temp)):
@@ -10,5 +8,11 @@ def selectionSort(items):
     temp[i], temp[min_idx] = temp[min_idx], temp[i]
   return temp
 
-sortedA = selectionSort(a)
-print(sortedA)
+values = [1,3,7,2,9]
+result = selectionSort(values)
+print(result)
+
+
+values = [5,39,47,0,5]
+result = selectionSort(values)
+print(result)
